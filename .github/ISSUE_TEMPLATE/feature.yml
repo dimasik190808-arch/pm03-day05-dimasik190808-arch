@@ -1,0 +1,30 @@
+name: Предложение новой функции
+description: Запрос на добавление новых возможностей в продукт
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что помогаете улучшать наш продукт! Пожалуйста, заполните форму ниже.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему вы хотите решить?
+      description: Опишите, как сейчас работает система и почему это неудобно.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+      description: Какого конкретно наблюдаемого результата вы ожидаете?
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Ограничения и исключения
+      description: Укажите форматы данных, ограничения доступа или особые случаи.
+    validations:
+      required: true
